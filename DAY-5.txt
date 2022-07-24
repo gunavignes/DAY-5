@@ -1,0 +1,68 @@
+programs in arrow functions.......
+
+1.print odd numbers in an array:
+
+ let arr=userInput[0].split(" ").map(Number);
+  var odds=arr.filter(n=>{return n%2!=0;});
+console.log(odds);
+
+2.convert all the strings into title caps:
+  var sentenceCase =(str)=> {
+  if ((str===null) || (str===''))
+       return false;
+  else
+   str = str.toString();
+ 
+ return str.replace(
+function(txt){return txt.charAt(0).toUpperCase() +
+       txt.substr(1).toLowerCase();});
+}
+ 
+console.log(sentenceCase('geeks for geeks'));
+
+3.sum of all numbers in an array:
+ var getsum=(arr)=>
+  {
+    let sum=0;
+   for(let array of arr)
+      {
+       sum=sum+arr;
+       }
+     return sum;
+console.log(getsum([1,2,3,4,5)]);
+
+4.return prime numbers in an array:
+
+   const filterPrimes = array => {
+   const isPrime = n => {
+  for (let i = 2; i < n; i++) if (n % i === 0) return false;
+   return n > 1;
+   }
+   return array.filter(number => isPrime(number));  
+   }
+
+
+5.palindrome :
+   
+  var validatePalin=(str)=> {  
+  
+    // get the total length of the words  
+    const len = string.length;  
+  
+    // Use for loop to divide the words into 2 half  
+    for (let i = 0; i < len / 2; i++) {  
+  
+        // validate the first and last characters are same  
+        if (string[i] !== string[len - 1 - i]) {  
+            alert( 'It is not a palindrome');  
+        }  
+    }  
+    return( 'It is a palindrome');  
+}  
+  
+// accept the string or number from the prompt  
+const string = prompt('Enter a string or number: ');  
+  
+const value = validatePalin(string);  
+  
+console.log(value);
